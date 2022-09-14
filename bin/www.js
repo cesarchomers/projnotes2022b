@@ -15,6 +15,12 @@ var http = require('http');
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+function sum(num1, num2){
+  return num1 + num2;
+}
+
+
+
 /**
  * Create HTTP server.
  */
@@ -87,4 +93,6 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log('Listening at http://localhost:${');
+  console.log(addr);
 }
