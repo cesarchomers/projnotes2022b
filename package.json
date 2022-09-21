@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www.js",
-    "dev": "nodemon ./bin/www",
+    "start": "node ./server/bin/www",
+    "dev": "nodemon ./server/bin/www",
+    "devb": "babel-watch ./server/bin/www",
     "itgam": "ls"
   },
   "dependencies": {
