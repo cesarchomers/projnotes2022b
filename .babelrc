@@ -1,0 +1,8 @@
+{
+    "presets":[
+        //options objects
+        ["@babel/preset-env",{
+            "targets":{"node":"current"}
+        }]
+    ]
+}
