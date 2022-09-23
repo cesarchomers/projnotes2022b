@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./server/bin/www",
-    "dev": "nodemon ./server/bin/www",
+    "dev": "nodemon --exec babel-node ./server/bin/www",
     "devb": "babel-watch ./server/bin/www",
+    "clear": "rm -rf dist",
+    "build": "npm run clear && babel ./server --out-dir dist --copy-files",
     "itgam": "ls"
   },
   "dependencies": {
