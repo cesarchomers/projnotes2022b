@@ -8,7 +8,8 @@
     "devb": "babel-watch ./server/bin/www",
     "clear": "rm -rf dist",
     "build": "npm run clear && babel ./server --out-dir dist --copy-files",
-    "itgam": "ls"
+    "itgam": "ls",
+    "devc": "NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development" 
   },
   "dependencies": {
     "app-root-path": "^3.0.0",
