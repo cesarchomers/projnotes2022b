@@ -1,12 +1,12 @@
-// Cargado estilos
+// Cargado estilos personalizados
 // import './stylesheet/myStyles.css';
 // import './stylesheet/style.css';
-// importando materialize
-
-import 'materialize-css/dist/css/materialize.min.css';
-// importando scrips de materialize
+// Importandoe Estilos de Materialize CSS
+import 'materialize-css/dist/css/materialize.css';
+// Importando scripts de Materialize
 import 'materialize-css/dist/js/materialize';
 
-// inicializando los scrips
+// Inicializando Scripts de Materialize para interactividad
 M.AutoInit();
+
 console.log('Webpack Working Middleware!!! 📦');
