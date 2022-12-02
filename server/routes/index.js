@@ -1,14 +1,13 @@
-const express = require('express');
-
-const router = express.Router();
+var express = require('express');
+var router = express.Router();
 
 /* GET home page. */
-router.get('/',  (req, res, next), {
+router.get('/', function (req, res, next) {
   // View-Model
   res.render('index', {
     title: 'Express',
-    author: 'Ivan Rivalcoba',
-  }),
+    author: 'Ivan Rivalcoba'
+  });
 });
 
 module.exports = router;

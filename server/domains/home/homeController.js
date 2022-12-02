@@ -1,5 +1,6 @@
-// creando las variables de entonrno
+// Cargando las variables de entorno
 import configKeys from '../../config/configKeys';
+
 // Creando los Actions Methods
 // GET "/"
 // GET "/index"
@@ -15,7 +16,6 @@ const home = (req, res) => {
 };
 
 // GET "/about"
-
 const about = (req, res) => {
   const viewModel = {
     appVersion: configKeys.appVersion,
