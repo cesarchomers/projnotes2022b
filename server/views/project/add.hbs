@@ -13,7 +13,14 @@
         <div class='card-content'>
           <div class='input-field'>
             <label for='project-name'>Nombre de tu idea de proyecto</label>
-            <input type="text" name="name" id="project-name" placeholder="nombre del proyecto aquí" value="{{project.name}}">
+            <input
+              placeholder='El nombre del proyecto aqui 👇'
+              type='text'
+              name='name'
+              id='project-name'
+              value="{{project.name}}"
+              required
+            />
             {{#if errorModel.nameError}}
             <span style="color:red;">🚩 {{errorModel.nameError}}</span>
             {{/if}}
@@ -22,7 +29,12 @@
             <label for='project-description'>
               Descripción del proyecto
             </label>
-            <textarea name="description" class="materialize-textarea" id="project-description">{{project-description}}</textarea>
+            <textarea
+              name='description'
+              class="materialize-textarea"
+              id='project-description'
+              required
+            >{{project.description}}</textarea>
             {{#if errorModel.descriptionError}}
             <span style="color:red;">🚩 {{errorModel.descriptionError}}</span>
             {{/if}}
